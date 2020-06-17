@@ -33,20 +33,17 @@
     <link href="signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="pagina2.php" method="post"> 
   <img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-  <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-  <label for="inputPassword" class="sr-only">Password</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <h1 class="h3 mb-3 font-weight-normal">¡Bienvenido!</h1>
+  <label for="inputEmail" class="sr-only">Numero de mesa</label>
+  <input type="text" class="form-control" placeholder="Numero de mesa" name="mesa" required>
+  <label for="inputPassword" class="sr-only">Clave del dia</label>
+  <input type="password"  class="form-control" placeholder="Clave del dia" name="pass" required>
   <div class="checkbox mb-3">
-    <label>
-      <input type="checkbox" value="remember-me"> Remember me
-    </label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Validar</button>
+  <p class="mt-5 mb-3 text-muted">&copy; Matias Caparros - 2020</p>
 </form>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
