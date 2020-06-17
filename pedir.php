@@ -21,8 +21,6 @@
   if (isset($_REQUEST['check4'])) {
     $cant++;
   }
-  echo $_REQUEST['nombre'];
-  echo " practica $cant deportes.";
 
 
   $conexion = mysqli_connect("localhost", "root", "", "restaurant") or
