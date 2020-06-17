@@ -17,16 +17,16 @@
   ?>
 
 <form method="post" action="pedir.php">
-    Ingrese mesa:
-    <input type="text" name="mesa">
-    <br>
     Ingrese el nombre:
     <input type="text" name="nombre">
     <br>
-    Ingrese el pedido:
-    <input type="text" name="pedido">
+    Ingrese mesa:
+    <input type="text" name="mesa">
     <br>
-    <select name="codigopedido">
+    Ingrese la comida:
+    <input type="text" name="comida">
+    <br>
+    <select name="bebida">
       <option value="1">Coca</option>
       <option value="2">Cerveza</option>
       <option value="3">Agua</option>

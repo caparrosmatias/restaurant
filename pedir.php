@@ -28,13 +28,13 @@
   $conexion = mysqli_connect("localhost", "root", "", "restaurant") or
     die("Problemas con la conexión");
 
-  mysqli_query($conexion, "insert into pedidos(nombre,pedido,codigopedido) values 
-                       ('$_REQUEST[nombre]','$_REQUEST[mesa]',$_REQUEST[codigopedido])")
+  mysqli_query($conexion, "insert into caja(nombre,mesa,comida,bebida) values 
+                       ('$_REQUEST[nombre]','$_REQUEST[mesa]','$_REQUEST[comida]','$_REQUEST[bebida]')")
     or die("Problemas en el select" . mysqli_error($conexion));
 
   mysqli_close($conexion);
 
-  echo "El alumno fue dado de alta.";
+  echo "<br><h1>Pedido cargado</h1>";
 
   ?>
 
