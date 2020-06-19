@@ -26,7 +26,7 @@
   $conexion = mysqli_connect("localhost", "root", "", "restaurant") or
     die("Problemas con la conexión");
 
-  mysqli_query($conexion, "insert into caja(nombre,mesa,comida,bebida) values 
+  mysqli_query($conexion, "insert into cuenta(nombre,mesa,comida,bebida) values 
                        ('$_REQUEST[nombre]','$_REQUEST[mesa]','$_REQUEST[comida]','$_REQUEST[bebida]')")
     or die("Problemas en el select" . mysqli_error($conexion));
 

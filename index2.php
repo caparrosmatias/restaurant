@@ -53,7 +53,16 @@
 
 <?php
 
-if ($_REQUEST['pass']=="1234") {
+$conexion = mysqli_connect("localhost", "root", "", "restaurant") or
+die("Problemas con la conexión");
+
+$registros = mysqli_query($conexion, "SELECT clave FROM clave WHERE ID = (SELECT MAX(ID) FROM clave)") or
+die("Problemas en el select:" . mysqli_error($conexion));
+
+$clave = mysqli_fetch_array($registros);
+
+
+if ($_REQUEST['pass']==$clave) {
   //echo "Correcto, su mesa es " . $_REQUEST['mesa'] . " Y el pass es " . $_REQUEST['pass'];
   echo "<div class='starter-template'><h1>Bienvenido</h1></div>";
 } else {
