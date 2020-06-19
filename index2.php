@@ -62,7 +62,7 @@ die("Problemas en el select:" . mysqli_error($conexion));
 $clave = mysqli_fetch_array($registros);
 
 
-if ($_REQUEST['pass']==$clave) {
+if ($_REQUEST['pass']==$clave['clave']) {
   //echo "Correcto, su mesa es " . $_REQUEST['mesa'] . " Y el pass es " . $_REQUEST['pass'];
   echo "<div class='starter-template'><h1>Bienvenido</h1></div>";
 } else {
